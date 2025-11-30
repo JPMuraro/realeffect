@@ -6,12 +6,20 @@ import (
 	"os"
 	"path/filepath"
 
-	re "realeffect-cli/internal/realeffect"
+	re "github.com/JPMuraro/realeffect/internal/realeffect"
 
 	"gopkg.in/yaml.v3"
 )
 
 func main() {
+	fmt.Println("RealEffect CLI — core evaluation v0.1")
+
+	// Se o usuário pedir a versão: realeffectc --version
+	if len(os.Args) == 2 && (os.Args[1] == "-v" || os.Args[1] == "--version") {
+		fmt.Printf("RealEffect CLI — core engine v%s\n", re.Version)
+		os.Exit(0)
+	}
+
 	if len(os.Args) < 2 {
 		fmt.Fprintf(os.Stderr, "usage: realeffectc <mission-file.reff> [scenario]\n")
 		fmt.Fprintf(os.Stderr, "scenarios: all-accepted (default), missing-proof, low-acceptance\n")
