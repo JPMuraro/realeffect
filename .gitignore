@@ -1,0 +1,28 @@
+# Binários Go
+bin/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Arquivos de build temporários
+*.test
+*.out
+
+# Diretórios de build
+build/
+dist/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Logs e temporários
+*.log
+*.tmp
+*.swp
