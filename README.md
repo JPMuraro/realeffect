@@ -3,8 +3,6 @@
 RealEffect DSL (`.reff`) é uma linguagem declarativa baseada em YAML para descrever **missões de impacto real**  
 (meio ambiente, educação, saúde, etc.) com regras imutáveis de validação.
 
-Ela foi pensada para plataformas como **HumanityChain / PrymChain**, mas é neutra e pode ser usada em qualquer sistema.
-
 ---
 
 ## Objetivos
